@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="fr">
+<head><meta name="robots" content="noindex, nofollow"><script>window.DEMO_SHOP='boutique.html';</script><script src="../demo.js"></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paramètres | Admin Adam &amp; Hawae</title>
+  <link rel="icon" href="../favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin" data-last-order="45">
+  <aside class="side" id="side">
+    <a href="index.html" class="side__brand"><span class="logo__mark"></span><span>Adam &amp; Hawae</span></a>
+    <nav class="side__nav">
+              <a href="index.html" class="">
+          <svg viewBox="0 0 24 24"><path d="M3 13h8V3H3zM13 21h8V11h-8zM3 21h8v-6H3zM13 9h8V3h-8z"/></svg>Tableau de bord                  </a>
+              <a href="visites.html" class="">
+          <svg viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg>Visiteurs                  </a>
+              <a href="commandes.html" class="">
+          <svg viewBox="0 0 24 24"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>Commandes          <b class="side__badge">2</b>        </a>
+              <a href="propositions.html" class="">
+          <svg viewBox="0 0 24 24"><path d="M4 7h3l2-3h6l2 3h3v13H4z"/><circle cx="12" cy="13" r="3.5"/></svg>Propositions          <b class="side__badge">1</b>        </a>
+              <a href="produits.html" class="">
+          <svg viewBox="0 0 24 24"><path d="M12 3 3 7.5v9L12 21l9-4.5v-9L12 3Z"/><path d="M3 7.5 12 12l9-4.5M12 12v9"/></svg>Produits                  </a>
+              <a href="categories.html" class="">
+          <svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>Catégories                  </a>
+              <a href="codes.html" class="">
+          <svg viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8L3 12Z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg>Codes promo                  </a>
+              <a href="avis.html" class="">
+          <svg viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1 6.2L12 17.3 6.5 20.2l1-6.2L3 9.6l6.2-.9z"/></svg>Avis                  </a>
+              <a href="abonnes.html" class="">
+          <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>Abonnées                  </a>
+              <a href="pages.html" class="">
+          <svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></svg>Pages                  </a>
+              <a href="equipe.html" class="">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/></svg>Équipe                  </a>
+              <a href="compte.html" class="">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Mon compte                  </a>
+              <a href="parametres.html" class="is-active">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>Paramètres                  </a>
+          </nav>
+    <div class="side__foot">
+      <span class="side__user"><b>Compte démo</b><small>Propriétaire</small></span>
+      <a href="../index.html" target="_blank" rel="noopener">Voir la boutique ↗</a>
+      <a href="#">Déconnexion</a>
+    </div>
+  </aside>
+  <div class="side-overlay" id="sideOverlay"></div>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="topbar__menu" id="sideBtn" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+      <h1>Paramètres</h1>
+    </header>
+    <a class="new-order" id="newOrder" hidden></a>
+      <form method="post" enctype="multipart/form-data" class="settings">
+    <input type="hidden" name="csrf" value="demo">    <input type="hidden" name="form" value="general">
+
+    <section class="panel">
+      <h2>Boutique &amp; contact</h2>
+      <div class="form-grid">
+        <div class="field"><label for="s-name">Nom de la boutique</label><input id="s-name" name="store_name" value="Adam &amp; Hawae"></div>
+        <div class="field"><label for="s-email">E-mail de contact</label><input id="s-email" type="email" name="store_email" value="contact@adamethawaee.store"></div>
+        <div class="field"><label for="s-wa">Numéro WhatsApp</label><input id="s-wa" name="whatsapp" value="212689389923" placeholder="06 12 34 56 78"><p class="muted small">Utilisé pour tous les boutons WhatsApp du site.</p></div>
+        <div class="field"><label for="s-phone">Téléphone affiché</label><input id="s-phone" name="phone_display" value="+212 6 89 38 99 23"></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Livraison &amp; échanges</h2>
+      <div class="form-grid">
+        <div class="field"><label for="s-fee">Frais de livraison (DH)</label><input id="s-fee" type="number" min="0" name="shipping_fee" value="30"></div>
+        <div class="field"><label for="s-free">Livraison offerte à partir de (DH)</label><input id="s-free" type="number" min="0" name="free_shipping_from" value="500"><p class="muted small">Mettez 0 pour une livraison toujours offerte.</p></div>
+        <div class="field"><label for="s-days">Délai de livraison (texte)</label><input id="s-days" name="delivery_days" value="24 à 72h" placeholder="24 à 72h"></div>
+        <div class="field"><label for="s-ret">Jours pour un échange</label><input id="s-ret" type="number" min="0" name="return_days" value="7"></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Page d'accueil &amp; bandeau</h2>
+      <div class="form-grid">
+        <div class="field"><label for="s-hero">Grand titre de l'accueil</label><input id="s-hero" name="hero_word" value="Adam &amp; Hawae"></div>
+        <div class="field">
+          <label for="s-heroimg">Photo de l'accueil <span>(PNG/WebP sans arrière-plan)</span></label>
+          <div class="hero-pick"><img src="../uploads/2026/10/1b52bee9219d16d7.png" alt=""><input id="s-heroimg" type="file" name="hero_image" accept="image/png,image/webp,image/jpeg"></div>
+        </div>
+      </div>
+              <div class="field"><label for="s-a1">Message du bandeau 1</label><input id="s-a1" name="announce_1" value="Livraison offerte dès 500 DH | Paiement à la livraison | **Nouvelle collection disponible**"></div>
+              <div class="field"><label for="s-a2">Message du bandeau 2</label><input id="s-a2" name="announce_2" value="Livraison en 24 à 72h partout au Maroc | **Commandez en toute confiance**"></div>
+              <div class="field"><label for="s-a3">Message du bandeau 3</label><input id="s-a3" name="announce_3" value="Échange facile sous 7 jours | **Découvrez les nouveautés**"></div>
+            <p class="muted small">Séparez les parties par « | ». Mettez un texte entre **doubles étoiles** pour l'écrire en gras. Laissez vide pour ne pas l'afficher.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Traductions (arabe &amp; anglais)</h2>
+      <p class="muted small">Textes affichés quand le téléphone de la cliente est en arabe ou en anglais. Vide = texte français.</p>
+              <div class="form-grid">
+          <div class="field"><label for="s-hero_word-ar">Grand titre de l&#039;accueil · العربية</label><input id="s-hero_word-ar" name="hero_word_ar" value="آدم وحواء" dir="rtl"></div>
+          <div class="field"><label for="s-hero_word-en">Grand titre de l&#039;accueil · English</label><input id="s-hero_word-en" name="hero_word_en" value=""></div>
+        </div>
+              <div class="form-grid">
+          <div class="field"><label for="s-delivery_days-ar">Délai de livraison · العربية</label><input id="s-delivery_days-ar" name="delivery_days_ar" value="24 إلى 72 ساعة" dir="rtl"></div>
+          <div class="field"><label for="s-delivery_days-en">Délai de livraison · English</label><input id="s-delivery_days-en" name="delivery_days_en" value="24–72h"></div>
+        </div>
+              <div class="form-grid">
+          <div class="field"><label for="s-announce_1-ar">Bandeau 1 · العربية</label><input id="s-announce_1-ar" name="announce_1_ar" value="توصيل مجاني ابتداءً من 500 درهم | الدفع عند الاستلام | **تشكيلة جديدة متوفرة**" dir="rtl"></div>
+          <div class="field"><label for="s-announce_1-en">Bandeau 1 · English</label><input id="s-announce_1-en" name="announce_1_en" value="Free delivery from 500 DH | Cash on delivery | **New collection available**"></div>
+        </div>
+              <div class="form-grid">
+          <div class="field"><label for="s-announce_2-ar">Bandeau 2 · العربية</label><input id="s-announce_2-ar" name="announce_2_ar" value="التوصيل خلال 24 إلى 72 ساعة لجميع مدن المغرب | **اطلبي بكل ثقة**" dir="rtl"></div>
+          <div class="field"><label for="s-announce_2-en">Bandeau 2 · English</label><input id="s-announce_2-en" name="announce_2_en" value="Delivery in 24–72h across Morocco | **Order with confidence**"></div>
+        </div>
+              <div class="form-grid">
+          <div class="field"><label for="s-announce_3-ar">Bandeau 3 · العربية</label><input id="s-announce_3-ar" name="announce_3_ar" value="استبدال سهل خلال 7 أيام | **اكتشفي الجديد**" dir="rtl"></div>
+          <div class="field"><label for="s-announce_3-en">Bandeau 3 · English</label><input id="s-announce_3-en" name="announce_3_en" value="Easy exchange within 7 days | **Discover what&#039;s new**"></div>
+        </div>
+              <div class="form-grid">
+          <div class="field"><label for="s-meta_description-ar">Description Google · العربية</label><input id="s-meta_description-ar" name="meta_description_ar" value="عباءات وخمارات وشالات أنيقة. الدفع عند الاستلام في جميع مدن المغرب." dir="rtl"></div>
+          <div class="field"><label for="s-meta_description-en">Description Google · English</label><input id="s-meta_description-en" name="meta_description_en" value="Elegant abayas, khimars and shawls. Cash on delivery across Morocco."></div>
+        </div>
+          </section>
+
+    <section class="panel">
+      <h2>Réseaux sociaux &amp; référencement</h2>
+      <div class="form-grid">
+        <div class="field"><label for="s-ig">Instagram</label><input id="s-ig" name="instagram" value="https://www.instagram.com/adamethawaee/"></div>
+        <div class="field"><label for="s-fb">Facebook</label><input id="s-fb" name="facebook" value="https://www.facebook.com/profile.php?id=61584753952234"></div>
+        <div class="field"><label for="s-tt">TikTok</label><input id="s-tt" name="tiktok" value="https://www.tiktok.com/@adamethawaee"></div>
+        <div class="field"><label for="s-meta">Description Google</label><input id="s-meta" name="meta_description" value="Abayas, khimars et châles élégants. Paiement à la livraison partout au Maroc." maxlength="160"></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Publicité (pixels)</h2>
+      <p class="muted small">Pour suivre vos ventes depuis vos pubs Facebook/Instagram et TikTok. Les événements « Vue produit », « Ajout au panier », « Commande » et « Achat » sont envoyés automatiquement. Laissez vide si vous ne faites pas de publicité.</p>
+      <div class="form-grid">
+        <div class="field"><label for="s-px">ID Pixel Meta (Facebook)</label><input id="s-px" name="fb_pixel" value="" placeholder="Ex : 123456789012345"></div>
+        <div class="field"><label for="s-tpx">ID Pixel TikTok</label><input id="s-tpx" name="tiktok_pixel" value="" placeholder="Ex : C1ABCDEF2GHIJK"></div>
+      </div>
+    </section>
+
+    <section class="panel" id="meta">
+      <h2>Meta : API Conversions &amp; domaine</h2>
+      <p class="muted small">L'API Conversions envoie aussi les ventes à Meta depuis le serveur : les achats sont comptés même quand le pixel est bloqué (iPhone, bloqueurs de pub). Meta optimise mieux vos pubs et le coût par commande baisse. Les doublons pixel/serveur sont évités automatiquement.</p>
+            <p class="capi-state ">
+        ⚪ Non activée (il faut l'ID du pixel + le token)
+              </p>
+      <div class="form-grid">
+        <div class="field">
+          <label for="s-capi">Token d'accès de l'API Conversions</label>
+          <input id="s-capi" type="password" name="fb_capi_token" autocomplete="off" placeholder="EAAG…">
+                  </div>
+        <div class="field">
+          <label for="s-test">Code de test <span>(facultatif, à vider après le test)</span></label>
+          <input id="s-test" name="fb_test_code" value="" placeholder="Ex : TEST12345">
+        </div>
+        <div class="field field--wide">
+          <label for="s-dv">Vérification du domaine</label>
+          <input id="s-dv" name="fb_domain_verification" value="" placeholder='Collez la balise : &lt;meta name="facebook-domain-verification" content="…" /&gt;'>
+                  </div>
+      </div>
+      <details class="guide">
+        <summary>Comment obtenir le token et vérifier le domaine ?</summary>
+        <ol>
+          <li><b>Token</b> : <a href="https://business.facebook.com/events_manager2" target="_blank" rel="noopener">Gestionnaire d'événements</a> → votre pixel → <b>Paramètres</b> → section « API Conversions » → <b>Générer un token d'accès</b>. Copiez-le ici puis enregistrez.</li>
+          <li><b>Tester</b> : dans le Gestionnaire d'événements → <b>Tester les événements</b>, copiez le code (ex : TEST12345) dans « Code de test », puis cliquez sur « Envoyer un événement test ». Videz le code ensuite.</li>
+          <li><b>Domaine</b> (une fois le site en ligne sur votre domaine) : <a href="https://business.facebook.com/settings/owned-domains" target="_blank" rel="noopener">Paramètres de l'entreprise → Sécurité de la marque → Domaines</a> → Ajouter <b>adamethawaee.store</b> → méthode « Balise meta » → collez la balise ici, enregistrez, puis cliquez sur « Vérifier » chez Meta.</li>
+        </ol>
+      </details>
+      <button class="btn btn--ghost btn--sm" name="action" value="meta_test">Envoyer un événement test</button>
+    </section>
+
+    <div class="sticky-save"><button class="btn">Enregistrer les paramètres</button></div>
+  </form>
+
+  <form method="post" class="panel" id="notifications">
+    <input type="hidden" name="csrf" value="demo">    <input type="hidden" name="form" value="notify">
+    <button type="submit" name="action" value="save" class="hp" tabindex="-1" aria-hidden="true"></button>
+    <h2>Notifications des nouvelles commandes</h2>
+    <h3 class="subhead">Telegram</h3>
+    <p class="muted small">Recevez chaque nouvelle commande sur votre téléphone, en quelques secondes.</p>
+
+    <details class="help" open>
+      <summary>Comment activer Telegram (gratuit, 2 minutes) ?</summary>
+      <ol class="small">
+        <li>Installez <strong>Telegram</strong> et ouvrez la conversation avec <strong>@BotFather</strong>.</li>
+        <li>Envoyez <code>/newbot</code>, choisissez un nom (ex : <em>Adam Hawae Commandes</em>) puis un identifiant finissant par <code>bot</code>.</li>
+        <li>BotFather vous donne un <strong>token</strong> (ex : <code>123456:ABC-xyz…</code>) : collez-le ci-dessous.</li>
+        <li>Ouvrez votre nouveau bot et envoyez-lui « Bonjour ».</li>
+        <li>Cliquez sur <strong>Trouver mon Chat ID</strong>, puis <strong>Envoyer un test</strong>.</li>
+      </ol>
+    </details>
+    <div class="form-grid">
+      <div class="field"><label for="n-token">Token du bot Telegram</label><input id="n-token" type="password" name="telegram_token" value="" autocomplete="off" placeholder="123456789:ABC..."></div>
+      <div class="field"><label for="n-chat">Chat ID</label><input id="n-chat" name="telegram_chat_id" value="" placeholder="Rempli automatiquement"></div>
+    </div>
+    <div class="contact-actions">
+      <button class="btn btn--ghost btn--sm" name="action" value="detect">Trouver mon Chat ID</button>
+      <button class="btn btn--ghost btn--sm" name="action" value="test">Envoyer un test Telegram</button>
+    </div>
+
+    <h3 class="subhead">Groupe avec sujets <span class="muted small">(recommandé)</span></h3>
+    <p class="muted small">Toutes les notifications rangées par thème dans un seul groupe, et votre équipe (ex : l'agent de confirmation) peut le rejoindre.</p>
+        <ul class="tg-topics">
+              <li class=""><b>🛍️ Nouvelles commandes</b><span>Chaque nouvelle commande avec la photo, le client et ses commandes précédentes</span><em>—</em></li>
+              <li class=""><b>✅ Suivi des commandes</b><span>Confirmations, annulations, expéditions… et qui l&#039;a fait</span><em>—</em></li>
+              <li class=""><b>📦 Produits &amp; propositions</b><span>Propositions de l&#039;équipe, produits créés, mis en ligne, épuisés</span><em>—</em></li>
+              <li class=""><b>⭐ Avis &amp; abonnées</b><span>Nouveaux avis à valider et nouvelles abonnées</span><em>—</em></li>
+              <li class=""><b>👥 Équipe &amp; sécurité</b><span>Connexions, tentatives suspectes, comptes modifiés</span><em>—</em></li>
+              <li class=""><b>📊 Rapport du jour</b><span>Le bilan de la journée chaque soir</span><em>—</em></li>
+          </ul>
+    <details class="help" open>
+      <summary>Comment créer le groupe avec sujets ?</summary>
+      <ol class="small">
+        <li>Dans Telegram : <strong>Nouveau groupe</strong> (ex : « Adam &amp; Hawae — Gestion »), ajoutez votre bot et les membres de l'équipe.</li>
+        <li>Infos du groupe → <strong>Modifier</strong> → activez <strong>Sujets</strong> (Topics).</li>
+        <li><strong>Administrateurs</strong> → ajoutez le bot comme administrateur avec le droit <strong>Gérer les sujets</strong>.</li>
+        <li>Écrivez <code>/start</code> dans le groupe, puis cliquez ici sur <strong>Trouver mon Chat ID</strong> (il commence par <code>-100</code>).</li>
+        <li>Cliquez sur <strong>Créer les sujets</strong> : les 6 sujets apparaissent dans le groupe.</li>
+      </ol>
+      <p class="small muted">Sans groupe, tout continue d'arriver dans votre conversation privée avec le bot.</p>
+    </details>
+    <div class="contact-actions">
+      <button class="btn btn--ghost btn--sm" name="action" value="topics" title="Il faut d'abord le Chat ID d'un groupe">Créer les sujets</button>
+          </div>
+    <div class="form-grid">
+      <div class="field">
+        <label for="n-hour">Rapport du jour sur Telegram</label>
+        <select id="n-hour" name="telegram_report_hour">
+          <option value="">Désactivé</option>
+          <option value="18">Chaque soir vers 18 h</option><option value="19">Chaque soir vers 19 h</option><option value="20">Chaque soir vers 20 h</option><option value="21" selected>Chaque soir vers 21 h</option><option value="22">Chaque soir vers 22 h</option><option value="23">Chaque soir vers 23 h</option>        </select>
+      </div>
+      <div class="field field--end"><button class="btn btn--ghost btn--sm" name="action" value="report">Envoyer le rapport maintenant</button></div>
+    </div>
+    <p class="muted small">Le rapport (commandes, confirmations, retours, meilleures ventes, travail de l'équipe, commandes à rappeler) part dès la première visite sur le site après l'heure choisie.</p>
+
+    <h3 class="subhead">E-mail</h3>
+    <details class="help" open>
+      <summary>Comment activer l'e-mail avec Gmail (2 minutes) ?</summary>
+      <ol class="small">
+        <li>Sur votre compte Google, activez la <strong>validation en deux étapes</strong> (Sécurité).</li>
+        <li>Ouvrez <a class="link-btn" href="https://myaccount.google.com/apppasswords" target="_blank" rel="noopener">myaccount.google.com/apppasswords</a>, créez un mot de passe d'application nommé « Boutique ».</li>
+        <li>Google affiche un code de 16 lettres : collez-le dans « Mot de passe d'application » ci-dessous.</li>
+        <li>Serveur : <code>smtp.gmail.com</code>, port <code>465</code>, sécurité <code>SSL</code>, identifiant : votre adresse Gmail.</li>
+        <li>Cliquez sur <strong>Envoyer un e-mail de test</strong>.</li>
+      </ol>
+      <p class="small muted">Une fois le site hébergé, vous pourrez utiliser l'e-mail de votre hébergeur (ex : contact@adamethawaee.store) avec ses paramètres SMTP.</p>
+    </details>
+    <div class="form-grid">
+      <div class="field"><label for="n-mail">Recevoir les commandes à l'adresse</label><input id="n-mail" type="email" name="notify_email" value="" placeholder="Ex : vous@gmail.com"></div>
+      <div class="field"><label for="n-host">Serveur SMTP</label><input id="n-host" name="smtp_host" value="" placeholder="Ex : smtp.gmail.com"></div>
+      <div class="field"><label for="n-port">Port</label><input id="n-port" type="number" name="smtp_port" value="465"></div>
+      <div class="field">
+        <label for="n-sec">Sécurité</label>
+        <select id="n-sec" name="smtp_secure">
+                      <option value="ssl" selected>SSL (port 465)</option>
+                      <option value="tls">TLS / STARTTLS (port 587)</option>
+                      <option value="none">Aucune</option>
+                  </select>
+      </div>
+      <div class="field"><label for="n-user">Identifiant (adresse e-mail)</label><input id="n-user" name="smtp_user" value="" autocomplete="off" placeholder="Ex : vous@gmail.com"></div>
+      <div class="field">
+        <label for="n-pass">Mot de passe d'application</label>
+        <input id="n-pass" type="password" name="smtp_pass" autocomplete="new-password" placeholder="xxxx xxxx xxxx xxxx">
+              </div>
+    </div>
+    <div class="contact-actions">
+      <button class="btn btn--ghost btn--sm" name="action" value="test_email">Envoyer un e-mail de test</button>
+    </div>
+
+    <h3 class="subhead">Newsletter</h3>
+    <div class="field">
+      <label for="n-coupon">Code offert après inscription à la newsletter <span>(affiché seulement si le code est actif)</span></label>
+      <select id="n-coupon" name="newsletter_coupon">
+        <option value="">— Aucun —</option>
+              </select>
+    </div>
+    <button class="btn btn--sm" name="action" value="save">Enregistrer les notifications</button>
+    <p class="muted small">Dans l'admin, un son et une alerte signalent aussi chaque nouvelle commande tant que la page est ouverte.</p>
+  </form>
+
+  <form method="post" class="panel" id="tailles">
+    <input type="hidden" name="csrf" value="demo">    <input type="hidden" name="form" value="sizes">
+    <h2>Guide des tailles</h2>
+    <div class="table-scroll">
+      <table class="table table--inputs" id="sizeRows">
+        <thead><tr><th>Taille</th><th>Équivalent</th><th>Poitrine (cm)</th><th>Longueur (cm)</th><th>Hauteur</th><th></th></tr></thead>
+        <tbody>
+                      <tr>
+                              <td><input name="g_size[]" value="S" aria-label="size"></td>
+                              <td><input name="g_taille[]" value="36–38" aria-label="taille"></td>
+                              <td><input name="g_poitrine[]" value="86–92" aria-label="poitrine"></td>
+                              <td><input name="g_longueur[]" value="135" aria-label="longueur"></td>
+                              <td><input name="g_hauteur[]" value="1,50–1,58 m" aria-label="hauteur"></td>
+                            <td><button type="button" class="link-btn link-btn--danger" onclick="this.closest('tr').remove()" aria-label="Supprimer la ligne">✕</button></td>
+            </tr>
+                      <tr>
+                              <td><input name="g_size[]" value="M" aria-label="size"></td>
+                              <td><input name="g_taille[]" value="38–40" aria-label="taille"></td>
+                              <td><input name="g_poitrine[]" value="92–98" aria-label="poitrine"></td>
+                              <td><input name="g_longueur[]" value="140" aria-label="longueur"></td>
+                              <td><input name="g_hauteur[]" value="1,58–1,65 m" aria-label="hauteur"></td>
+                            <td><button type="button" class="link-btn link-btn--danger" onclick="this.closest('tr').remove()" aria-label="Supprimer la ligne">✕</button></td>
+            </tr>
+                      <tr>
+                              <td><input name="g_size[]" value="L" aria-label="size"></td>
+                              <td><input name="g_taille[]" value="40–42" aria-label="taille"></td>
+                              <td><input name="g_poitrine[]" value="98–106" aria-label="poitrine"></td>
+                              <td><input name="g_longueur[]" value="145" aria-label="longueur"></td>
+                              <td><input name="g_hauteur[]" value="1,65–1,72 m" aria-label="hauteur"></td>
+                            <td><button type="button" class="link-btn link-btn--danger" onclick="this.closest('tr').remove()" aria-label="Supprimer la ligne">✕</button></td>
+            </tr>
+                      <tr>
+                              <td><input name="g_size[]" value="XL" aria-label="size"></td>
+                              <td><input name="g_taille[]" value="42–46" aria-label="taille"></td>
+                              <td><input name="g_poitrine[]" value="106–116" aria-label="poitrine"></td>
+                              <td><input name="g_longueur[]" value="150" aria-label="longueur"></td>
+                              <td><input name="g_hauteur[]" value="1,72–1,80 m" aria-label="hauteur"></td>
+                            <td><button type="button" class="link-btn link-btn--danger" onclick="this.closest('tr').remove()" aria-label="Supprimer la ligne">✕</button></td>
+            </tr>
+                      <tr>
+                              <td><input name="g_size[]" value="" aria-label="size"></td>
+                              <td><input name="g_taille[]" value="" aria-label="taille"></td>
+                              <td><input name="g_poitrine[]" value="" aria-label="poitrine"></td>
+                              <td><input name="g_longueur[]" value="" aria-label="longueur"></td>
+                              <td><input name="g_hauteur[]" value="" aria-label="hauteur"></td>
+                            <td><button type="button" class="link-btn link-btn--danger" onclick="this.closest('tr').remove()" aria-label="Supprimer la ligne">✕</button></td>
+            </tr>
+                  </tbody>
+      </table>
+    </div>
+    <p class="muted small">La dernière ligne vide sert à ajouter une taille.</p>
+    <button class="btn btn--sm">Enregistrer le guide</button>
+  </form>
+
+  <form method="post" class="panel" id="palette">
+    <input type="hidden" name="csrf" value="demo">    <input type="hidden" name="form" value="palette">
+    <h2>Palette des couleurs</h2>
+    <p class="muted small">Votre référence de couleurs (elle n'apparaît pas sur la boutique) : la caméra 📷 les reconnaît en premier. Dans un produit, tapez le nom d'une couleur de la palette : son code et ses traductions se remplissent tout seuls.</p>
+    <div class="colors" id="paletteRows">
+              <div class="colors__row" data-crow>
+          <input type="color" value="#141414" aria-label="Choisir la couleur" data-picker>
+          <input name="p_hex[]" value="#141414" class="hex" maxlength="7" placeholder="#602860" aria-label="Code couleur" data-hex>
+          <input name="p_name[]" value="Noir" placeholder="Nom (ex : Bleu nuit)" maxlength="40" aria-label="Nom" data-cname>
+          <input name="p_ar[]" value="أسود" placeholder="بالعربية" dir="rtl" maxlength="40" aria-label="Nom en arabe" data-car>
+          <input name="p_en[]" value="Black" placeholder="In English" maxlength="40" aria-label="Nom en anglais" data-cen>
+          <button type="button" class="link-btn" data-colorpick-row title="Détecter la couleur avec la caméra" aria-label="Détecter la couleur avec la caméra">📷</button>
+          <button type="button" class="link-btn link-btn--danger" onclick="this.closest('.colors__row').remove()" aria-label="Supprimer la couleur">✕</button>
+        </div>
+              <div class="colors__row" data-crow>
+          <input type="color" value="#ece6d8" aria-label="Choisir la couleur" data-picker>
+          <input name="p_hex[]" value="#ece6d8" class="hex" maxlength="7" placeholder="#602860" aria-label="Code couleur" data-hex>
+          <input name="p_name[]" value="Blanc cassé" placeholder="Nom (ex : Bleu nuit)" maxlength="40" aria-label="Nom" data-cname>
+          <input name="p_ar[]" value="أبيض مكسور" placeholder="بالعربية" dir="rtl" maxlength="40" aria-label="Nom en arabe" data-car>
+          <input name="p_en[]" value="Off-white" placeholder="In English" maxlength="40" aria-label="Nom en anglais" data-cen>
+          <button type="button" class="link-btn" data-colorpick-row title="Détecter la couleur avec la caméra" aria-label="Détecter la couleur avec la caméra">📷</button>
+          <button type="button" class="link-btn link-btn--danger" onclick="this.closest('.colors__row').remove()" aria-label="Supprimer la couleur">✕</button>
+        </div>
+              <div class="colors__row" data-crow>
+          <input type="color" value="#d6c2a3" aria-label="Choisir la couleur" data-picker>
+          <input name="p_hex[]" value="#d6c2a3" class="hex" maxlength="7" placeholder="#602860" aria-label="Code couleur" data-hex>
+          <input name="p_name[]" value="Beige" placeholder="Nom (ex : Bleu nuit)" maxlength="40" aria-label="Nom" data-cname>
+          <input name="p_ar[]" value="بيج" placeholder="بالعربية" dir="rtl" maxlength="40" aria-label="Nom en arabe" data-car>
+          <input name="p_en[]" value="Beige" placeholder="In English" maxlength="40" aria-label="Nom en anglais" data-cen>
+          <button type="button" class="link-btn" data-colorpick-row title="Détecter la couleur avec la caméra" aria-label="Détecter la couleur avec la caméra">📷</button>
+          <button type="button" class="link-btn link-btn--danger" onclick="this.closest('.colors__row').remove()" aria-label="Supprimer la couleur">✕</button>
+        </div>
+              <div class="colors__row" data-crow>
+          <input type="color" value="#8b7d6b" aria-label="Choisir la couleur" data-picker>
+          <input name="p_hex[]" value="#8b7d6b" class="hex" maxlength="7" placeholder="#602860" aria-label="Code couleur" data-hex>
+          <input name="p_name[]" value="Taupe" placeholder="Nom (ex : Bleu nuit)" maxlength="40" aria-label="Nom" data-cname>
+          <input name="p_ar[]" value="طوب" placeholder="بالعربية" dir="rtl" maxlength="40" aria-label="Nom en arabe" data-car>
+          <input name="p_en[]" value="Taupe" placeholder="In English" maxlength="40" aria-label="Nom en anglais" data-cen>
+          <button type="button" class="link-btn" data-colorpick-row title="Détecter la couleur avec la caméra" aria-label="Détecter la couleur avec la caméra">📷</button>
+          <button type="button" class="link-btn link-btn--danger" onclick="this.closest('.colors__row').remove()" aria-label="Supprimer la couleur">✕</button>
+        </div>
+              <div class="colors__row" data-crow>
+          <input type="color" value="#6b4429" aria-label="Choisir la couleur" data-picker>
+          <input name="p_hex[]" value="#6b4429" class="hex" maxlength="7" placeholder="#602860" aria-label="Code couleur" data-hex>
+          <input name="p_name[]" value="Marron" placeholder="Nom (ex : Bleu nuit)" maxlength="40" aria-label="Nom" data-cname>
+          <input name="p_ar[]" value="بني" placeholder="بالعربية" dir="rtl" maxlength="40" aria-label="Nom en arabe" data-car>
+          <input name="p_en[]" value="Brown" placeholder="In English" maxlength="40" aria-label="Nom en anglais" data-cen>
+          <button type="button" class="link-btn" data-colorpick-row title="Détecter la couleur avec la caméra" aria-label="Détecter la couleur avec la caméra">📷</button>
+          <button type="button" class="link-btn link-btn--danger" onclick="this.closest('.colors__row').remove()" aria-label="Supprimer la couleur">✕</button>
+        </div>
+              <div class="colors__row" data-crow>
+          <input type="color" value="#8a8a8a" aria-label="Choisir la couleur" data-picker>
+          <input name="p_hex[]" value="#8a8a8a" class="hex" maxlength="7" placeholder="#602860" aria-label="Code couleur" data-hex>
+          <input name="p_name[]" value="Gris" placeholder="Nom (ex : Bleu nuit)" maxlength="40" aria-label="Nom" data-cname>
+          <input name="p_ar[]" value="رمادي" placeholder="بالعربية" dir="rtl" maxlength="40" aria-label="Nom en arabe" data-car>
+          <input name="p_en[]" value="Grey" placeholder="In English" maxlength="40" aria-label="Nom en anglais" data-cen>
+          <button type="button" class="link-btn" data-colorpick-row title="Détecter la couleur avec la caméra" aria-label="Détecter la couleur avec la caméra">📷</button>
+          <button type="button" class="link-btn link-btn--danger" onclick="this.closest('.colors__row').remove()" aria-label="Supprimer la couleur">✕</button>
+        </div>
+              <div class="colors__row" data-crow>
+          <input type="color" value="#1c2541" aria-label="Choisir la couleur" data-picker>
+          <input name="p_hex[]" value="#1c2541" class="hex" maxlength="7" placeholder="#602860" aria-label="Code couleur" data-hex>
+          <input name="p_name[]" value="Bleu nuit" placeholder="Nom (ex : Bleu nuit)" maxlength="40" aria-label="Nom" data-cname>
+          <input name="p_ar[]" value="أزرق ليلي" placeholder="بالعربية" dir="rtl" maxlength="40" aria-label="Nom en arabe" data-car>
+          <input name="p_en[]" value="Midnight blue" placeholder="In English" maxlength="40" aria-label="Nom en anglais" data-cen>
+          <button type="button" class="link-btn" data-colorpick-row title="Détecter la couleur avec la caméra" aria-label="Détecter la couleur avec la caméra">📷</button>
+          <button type="button" class="link-btn link-btn--danger" onclick="this.closest('.colors__row').remove()" aria-label="Supprimer la couleur">✕</button>
+        </div>
+              <div class="colors__row" data-crow>
+          <input type="color" value="#1d7a55" aria-label="Choisir la couleur" data-picker>
+          <input name="p_hex[]" value="#1d7a55" class="hex" maxlength="7" placeholder="#602860" aria-label="Code couleur" data-hex>
+          <input name="p_name[]" value="Vert émeraude" placeholder="Nom (ex : Bleu nuit)" maxlength="40" aria-label="Nom" data-cname>
+          <input name="p_ar[]" value="أخضر زمردي" placeholder="بالعربية" dir="rtl" maxlength="40" aria-label="Nom en arabe" data-car>
+          <input name="p_en[]" value="Emerald green" placeholder="In English" maxlength="40" aria-label="Nom en anglais" data-cen>
+          <button type="button" class="link-btn" data-colorpick-row title="Détecter la couleur avec la caméra" aria-label="Détecter la couleur avec la caméra">📷</button>
+          <button type="button" class="link-btn link-btn--danger" onclick="this.closest('.colors__row').remove()" aria-label="Supprimer la couleur">✕</button>
+        </div>
+              <div class="colors__row" data-crow>
+          <input type="color" value="#7d7550" aria-label="Choisir la couleur" data-picker>
+          <input name="p_hex[]" value="#7d7550" class="hex" maxlength="7" placeholder="#602860" aria-label="Code couleur" data-hex>
+          <input name="p_name[]" value="Kaki" placeholder="Nom (ex : Bleu nuit)" maxlength="40" aria-label="Nom" data-cname>
+          <input name="p_ar[]" value="كاكي" placeholder="بالعربية" dir="rtl" maxlength="40" aria-label="Nom en arabe" data-car>
+          <input name="p_en[]" value="Khaki" placeholder="In English" maxlength="40" aria-label="Nom en anglais" data-cen>
+          <button type="button" class="link-btn" data-colorpick-row title="Détecter la couleur avec la caméra" aria-label="Détecter la couleur avec la caméra">📷</button>
+          <button type="button" class="link-btn link-btn--danger" onclick="this.closest('.colors__row').remove()" aria-label="Supprimer la couleur">✕</button>
+        </div>
+              <div class="colors__row" data-crow>
+          <input type="color" value="#5e1a28" aria-label="Choisir la couleur" data-picker>
+          <input name="p_hex[]" value="#5e1a28" class="hex" maxlength="7" placeholder="#602860" aria-label="Code couleur" data-hex>
+          <input name="p_name[]" value="Bordeaux" placeholder="Nom (ex : Bleu nuit)" maxlength="40" aria-label="Nom" data-cname>
+          <input name="p_ar[]" value="عنابي" placeholder="بالعربية" dir="rtl" maxlength="40" aria-label="Nom en arabe" data-car>
+          <input name="p_en[]" value="Burgundy" placeholder="In English" maxlength="40" aria-label="Nom en anglais" data-cen>
+          <button type="button" class="link-btn" data-colorpick-row title="Détecter la couleur avec la caméra" aria-label="Détecter la couleur avec la caméra">📷</button>
+          <button type="button" class="link-btn link-btn--danger" onclick="this.closest('.colors__row').remove()" aria-label="Supprimer la couleur">✕</button>
+        </div>
+              <div class="colors__row" data-crow>
+          <input type="color" value="#602860" aria-label="Choisir la couleur" data-picker>
+          <input name="p_hex[]" value="#602860" class="hex" maxlength="7" placeholder="#602860" aria-label="Code couleur" data-hex>
+          <input name="p_name[]" value="Prune" placeholder="Nom (ex : Bleu nuit)" maxlength="40" aria-label="Nom" data-cname>
+          <input name="p_ar[]" value="برقوقي" placeholder="بالعربية" dir="rtl" maxlength="40" aria-label="Nom en arabe" data-car>
+          <input name="p_en[]" value="Plum" placeholder="In English" maxlength="40" aria-label="Nom en anglais" data-cen>
+          <button type="button" class="link-btn" data-colorpick-row title="Détecter la couleur avec la caméra" aria-label="Détecter la couleur avec la caméra">📷</button>
+          <button type="button" class="link-btn link-btn--danger" onclick="this.closest('.colors__row').remove()" aria-label="Supprimer la couleur">✕</button>
+        </div>
+              <div class="colors__row" data-crow>
+          <input type="color" value="#a77ba8" aria-label="Choisir la couleur" data-picker>
+          <input name="p_hex[]" value="#a77ba8" class="hex" maxlength="7" placeholder="#602860" aria-label="Code couleur" data-hex>
+          <input name="p_name[]" value="Mauve" placeholder="Nom (ex : Bleu nuit)" maxlength="40" aria-label="Nom" data-cname>
+          <input name="p_ar[]" value="موف" placeholder="بالعربية" dir="rtl" maxlength="40" aria-label="Nom en arabe" data-car>
+          <input name="p_en[]" value="Mauve" placeholder="In English" maxlength="40" aria-label="Nom en anglais" data-cen>
+          <button type="button" class="link-btn" data-colorpick-row title="Détecter la couleur avec la caméra" aria-label="Détecter la couleur avec la caméra">📷</button>
+          <button type="button" class="link-btn link-btn--danger" onclick="this.closest('.colors__row').remove()" aria-label="Supprimer la couleur">✕</button>
+        </div>
+              <div class="colors__row" data-crow>
+          <input type="color" value="#e3bfc0" aria-label="Choisir la couleur" data-picker>
+          <input name="p_hex[]" value="#e3bfc0" class="hex" maxlength="7" placeholder="#602860" aria-label="Code couleur" data-hex>
+          <input name="p_name[]" value="Rose poudré" placeholder="Nom (ex : Bleu nuit)" maxlength="40" aria-label="Nom" data-cname>
+          <input name="p_ar[]" value="وردي فاتح" placeholder="بالعربية" dir="rtl" maxlength="40" aria-label="Nom en arabe" data-car>
+          <input name="p_en[]" value="Dusty pink" placeholder="In English" maxlength="40" aria-label="Nom en anglais" data-cen>
+          <button type="button" class="link-btn" data-colorpick-row title="Détecter la couleur avec la caméra" aria-label="Détecter la couleur avec la caméra">📷</button>
+          <button type="button" class="link-btn link-btn--danger" onclick="this.closest('.colors__row').remove()" aria-label="Supprimer la couleur">✕</button>
+        </div>
+              <div class="colors__row" data-crow>
+          <input type="color" value="#cccccc" aria-label="Choisir la couleur" data-picker>
+          <input name="p_hex[]" value="" class="hex" maxlength="7" placeholder="#602860" aria-label="Code couleur" data-hex>
+          <input name="p_name[]" value="" placeholder="Nom (ex : Bleu nuit)" maxlength="40" aria-label="Nom" data-cname>
+          <input name="p_ar[]" value="" placeholder="بالعربية" dir="rtl" maxlength="40" aria-label="Nom en arabe" data-car>
+          <input name="p_en[]" value="" placeholder="In English" maxlength="40" aria-label="Nom en anglais" data-cen>
+          <button type="button" class="link-btn" data-colorpick-row title="Détecter la couleur avec la caméra" aria-label="Détecter la couleur avec la caméra">📷</button>
+          <button type="button" class="link-btn link-btn--danger" onclick="this.closest('.colors__row').remove()" aria-label="Supprimer la couleur">✕</button>
+        </div>
+          </div>
+    <div class="inline-actions inline-actions--start">
+      <button type="button" class="btn btn--ghost btn--sm" id="addPalette">+ Ajouter une couleur</button>
+      <button class="btn btn--sm">Enregistrer la palette</button>
+    </div>
+  </form>
+  <dialog class="cpick" id="cpick">
+  <div class="cpick__head">
+    <strong>Pipette de couleur</strong>
+    <button type="button" class="link-btn" data-close aria-label="Fermer">✕</button>
+  </div>
+  <div class="cpick__bar cpick__sources">
+    <label class="btn btn--ghost btn--sm">🖼️ Image du PC / galerie<input type="file" accept="image/*" hidden data-file></label>
+    <button type="button" class="btn btn--ghost btn--sm" data-camera>📷 Caméra</button>
+    <button type="button" class="btn btn--ghost btn--sm" data-eyedropper hidden title="Prendre une couleur n'importe où sur l'écran">🎯 Pipette écran</button>
+  </div>
+  <div class="cpick__thumbs" data-thumbs hidden></div>
+  <div class="cpick__stage" data-stage>
+    <video playsinline muted autoplay hidden></video>
+    <canvas hidden></canvas>
+    <span class="cpick__aim" hidden></span>
+    <div class="cpick__loupe" hidden><canvas width="132" height="132"></canvas><span></span></div>
+    <p class="cpick__empty" data-empty>Choisissez une image (bouton ci-dessus), glissez-la ici, ou collez-la avec <kbd>Ctrl</kbd>+<kbd>V</kbd>.</p>
+  </div>
+  <p class="muted small" data-hint></p>
+  <div class="cpick__bar">
+    <button type="button" class="btn btn--sm" data-shot hidden>Capturer</button>
+    <label class="cpick__prec small">Pipette :
+      <select data-prec>
+        <option value="area">Zone moyenne (conseillé pour le tissu)</option>
+        <option value="small">Petite zone</option>
+        <option value="px">Précise (1 pixel)</option>
+      </select>
+    </label>
+  </div>
+  <div class="cpick__result" hidden>
+    <span class="cpick__swatch"></span>
+    <div class="cpick__info">
+      <label class="small">Nom de la couleur <span class="muted">(facultatif)</span></label>
+      <input data-name maxlength="40">
+      <span class="muted small">Code : <code data-hex></code> · <span data-near></span></span>
+    </div>
+  </div>
+  <label class="na cpick__white"><input type="checkbox" data-white> Corriger la lumière : je clique sur un papier <b>blanc</b> dans l'image</label>
+  <div class="cchips cpick__picked" data-picked></div>
+  <div class="cpick__bar">
+    <button type="button" class="btn btn--sm" data-add disabled>Ajouter cette couleur</button>
+    <button type="button" class="btn btn--ghost btn--sm" data-done>Terminer</button>
+  </div>
+</dialog>
+<script>
+(() => {
+  // Les couleurs courantes dyal l abayat (smiya b lfrançais + code)
+  const NAMES = [['Noir','#141414'],['Blanc','#f5f5f2'],['Blanc cassé','#ece6d8'],['Écru','#e2d7c1'],['Beige','#d6c2a3'],['Sable','#c8b08a'],
+    ['Camel','#b98a55'],['Marron','#6b4429'],['Chocolat','#3e2a1e'],['Taupe','#8b7d6b'],['Gris clair','#c4c4c4'],['Gris','#8a8a8a'],
+    ['Anthracite','#3a3c40'],['Bleu nuit','#1c2541'],['Bleu marine','#22305a'],['Bleu roi','#2a4bb0'],['Bleu ciel','#9cc3e6'],
+    ['Bleu pétrole','#1f5866'],['Turquoise','#3bb3b0'],['Vert émeraude','#1d7a55'],['Vert olive','#6b6b3a'],['Kaki','#7d7550'],
+    ['Vert sauge','#a3b49a'],['Vert bouteille','#1f3d2b'],['Bordeaux','#5e1a28'],['Rouge','#b3202a'],['Rose poudré','#e3bfc0'],
+    ['Rose','#e48aa6'],['Fuchsia','#c2276e'],['Vieux rose','#b77b82'],['Prune','#602860'],['Mauve','#a77ba8'],['Lilas','#c8b2d6'],
+    ['Violet','#5b2c83'],['Moutarde','#c99a2e'],['Jaune','#e8c33a'],['Orange','#d9692b'],['Corail','#e57b67'],['Terracotta','#b45a3c'],
+    ['Doré','#c7a252'],['Argenté','#bfc1c2']];
+  const hexToRgb = h => [1, 3, 5].map(i => parseInt(h.slice(i, i + 2), 16));
+  const rgbToHex = c => '#' + c.map(v => Math.round(Math.max(0, Math.min(255, v))).toString(16).padStart(2, '0')).join('');
+  function lab([r, g, b]) {
+    const f = v => (v /= 255) <= .04045 ? v / 12.92 : ((v + .055) / 1.055) ** 2.4;
+    [r, g, b] = [f(r), f(g), f(b)];
+    const xyz = [(r * .4124 + g * .3576 + b * .1805) / .95047, r * .2126 + g * .7152 + b * .0722, (r * .0193 + g * .1192 + b * .9505) / 1.08883]
+      .map(v => v > .008856 ? Math.cbrt(v) : 7.787 * v + 16 / 116);
+    return [116 * xyz[1] - 16, 500 * (xyz[0] - xyz[1]), 200 * (xyz[1] - xyz[2])];
+  }
+  // La palette dyal l boutique (Paramètres → Palette des couleurs) 3ndha l2awlawiya
+  const STORE = [{"name":"Noir","hex":"#141414","i18n":{"ar":"أسود","en":"Black"}},{"name":"Blanc cassé","hex":"#ece6d8","i18n":{"ar":"أبيض مكسور","en":"Off-white"}},{"name":"Beige","hex":"#d6c2a3","i18n":{"ar":"بيج","en":"Beige"}},{"name":"Taupe","hex":"#8b7d6b","i18n":{"ar":"طوب","en":"Taupe"}},{"name":"Marron","hex":"#6b4429","i18n":{"ar":"بني","en":"Brown"}},{"name":"Gris","hex":"#8a8a8a","i18n":{"ar":"رمادي","en":"Grey"}},{"name":"Bleu nuit","hex":"#1c2541","i18n":{"ar":"أزرق ليلي","en":"Midnight blue"}},{"name":"Vert émeraude","hex":"#1d7a55","i18n":{"ar":"أخضر زمردي","en":"Emerald green"}},{"name":"Kaki","hex":"#7d7550","i18n":{"ar":"كاكي","en":"Khaki"}},{"name":"Bordeaux","hex":"#5e1a28","i18n":{"ar":"عنابي","en":"Burgundy"}},{"name":"Prune","hex":"#602860","i18n":{"ar":"برقوقي","en":"Plum"}},{"name":"Mauve","hex":"#a77ba8","i18n":{"ar":"موف","en":"Mauve"}},{"name":"Rose poudré","hex":"#e3bfc0","i18n":{"ar":"وردي فاتح","en":"Dusty pink"}}]    .map(c => ({ ...c, lab: lab(hexToRgb(c.hex)) }));
+  const NAMES_LAB = NAMES.map(([n, h]) => ({ name: n, i18n: {}, lab: lab(hexToRgb(h)) }));
+  function closest(list, l) {
+    let best = null, dist = Infinity;
+    for (const c of list) {
+      const d = Math.hypot(l[0] - c.lab[0], l[1] - c.lab[1], l[2] - c.lab[2]);
+      if (d < dist) { dist = d; best = c; }
+    }
+    return [best, dist];
+  }
+  function nearest(rgb) {
+    const l = lab(rgb);
+    const [s, ds] = closest(STORE, l);
+    if (s && ds < 15) return [s, ds, true];
+    const [g, dg] = closest(NAMES_LAB, l);
+    return [g, dg, false];
+  }
+
+  // ===== Liste dyal les couleurs (pastilles) taht l input =====
+  const parse = v => v.split(',').map(s => s.trim()).filter(Boolean).map(s => {
+    const m = s.match(/^(.*?)\s*(#[0-9a-f]{6})?$/i);
+    return { name: m[1] || m[2] || s, hex: m[2] || '' };
+  });
+  const serialize = list => list.map(c => (c.name + ' ' + c.hex).trim()).join(', ');
+  function chip(c, onRemove) {
+    const el = document.createElement('span');
+    el.className = 'cchip';
+    el.innerHTML = '<i></i><span></span>' + (onRemove ? '<button type="button" title="Retirer">✕</button>' : '');
+    el.querySelector('i').style.background = c.hex || 'repeating-linear-gradient(45deg,#ddd 0 4px,#fff 4px 8px)';
+    el.querySelector('span').textContent = c.name + (c.hex ? ' ' + c.hex : ' (code ?)');
+    if (onRemove) el.querySelector('button').onclick = onRemove;
+    return el;
+  }
+  function renderChips(input) {
+    const box = input.parentElement.querySelector('.cchips');
+    box.innerHTML = '';
+    parse(input.value).forEach((c, i) => box.append(chip(c, () => {
+      const list = parse(input.value); list.splice(i, 1);
+      input.value = serialize(list); renderChips(input);
+    })));
+  }
+
+  // ===== Fenêtre =====
+  const dlg = document.getElementById('cpick');
+  const $ = s => dlg.querySelector(s);
+  const stage = $('[data-stage]'), video = stage.querySelector('video'), canvas = stage.querySelector(':scope > canvas');
+  const ctx = canvas.getContext('2d', { willReadFrequently: true });
+  const aim = $('.cpick__aim'), result = $('.cpick__result'), loupe = $('.cpick__loupe');
+  const lctx = loupe.querySelector('canvas').getContext('2d');
+  let stream = null, onPick = null, multi = false, point = null, white = null, rgb = null, match = null, frozen = false;
+  const hint = t => $('[data-hint]').textContent = t;
+  const HINT_IMG = 'Passez la souris sur l’image : la loupe montre la couleur exacte. Cliquez sur le tissu pour la prendre (évitez les ombres et les reflets).';
+
+  function stop() { stream?.getTracks().forEach(t => t.stop()); stream = null; }
+  function showEmpty(on) { $('[data-empty]').hidden = !on; }
+
+  async function startCamera() {
+    frozen = false;
+    canvas.hidden = true; aim.hidden = true; loupe.hidden = true; showEmpty(false);
+    video.hidden = false; $('[data-shot]').hidden = false;
+    hint('Visez le tissu à la lumière du jour (sans flash), puis appuyez sur « Capturer ».');
+    try {
+      if (!navigator.mediaDevices?.getUserMedia) throw new Error();
+      stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment', width: { ideal: 1920 } }, audio: false });
+      if (frozen || !dlg.open) return stop();
+      video.srcObject = stream;
+    } catch (e) {
+      // Bla caméra direct (http, PC bla caméra…) → image
+      video.hidden = true; $('[data-shot]').hidden = true; showEmpty(!frozen);
+      if (!frozen) hint('Caméra indisponible ici : choisissez plutôt une image (sur téléphone, « Image » propose aussi l’appareil photo).');
+    }
+  }
+  function freeze(source, w, h) {
+    frozen = true;
+    stop();
+    canvas.width = w; canvas.height = h;
+    ctx.drawImage(source, 0, 0, w, h);
+    video.hidden = true; canvas.hidden = false; showEmpty(false);
+    $('[data-shot]').hidden = true;
+    hint(HINT_IMG);
+    point = null; aim.hidden = true;
+  }
+  function loadImage(src, revoke) {
+    const img = new Image();
+    img.onload = () => {
+      const s = Math.min(1, 1800 / Math.max(img.width, img.height));
+      freeze(img, Math.round(img.width * s), Math.round(img.height * s));
+      if (revoke) URL.revokeObjectURL(src);
+    };
+    img.onerror = () => hint('Impossible de lire cette image.');
+    img.src = src;
+  }
+  const loadFile = f => f && /^image\//.test(f.type) && loadImage(URL.createObjectURL(f), true);
+
+  // Mediane dyal wa7d l carré: kat7iyyd l khyout, l 7bbat w les reflets (wla pixel wa7d f "Précise")
+  function radius() {
+    const p = $('[data-prec]').value;
+    return p === 'px' ? 0 : p === 'small' ? 3 : Math.max(4, Math.round(Math.min(canvas.width, canvas.height) * .02));
+  }
+  function sample(x, y) {
+    const r = radius();
+    const x0 = Math.max(0, x - r), y0 = Math.max(0, y - r);
+    const d = ctx.getImageData(x0, y0, Math.max(1, Math.min(r * 2 + 1, canvas.width - x0)), Math.max(1, Math.min(r * 2 + 1, canvas.height - y0))).data;
+    const ch = [[], [], []];
+    for (let i = 0; i < d.length; i += 4) { ch[0].push(d[i]); ch[1].push(d[i + 1]); ch[2].push(d[i + 2]); }
+    return ch.map(a => a.sort((p, q) => p - q)[a.length >> 1]);
+  }
+  const corrected = c => white ? c.map((v, i) => v * 245 / Math.max(white[i], 1)) : c;
+
+  function show(c) {
+    rgb = c;
+    const hex = rgbToHex(c);
+    const [near, dist, fromStore] = nearest(c);
+    match = near;
+    result.hidden = false;
+    $('.cpick__swatch').style.background = hex;
+    $('[data-hex]').textContent = hex;
+    $('[data-near]').textContent = fromStore ? 'couleur de votre palette : « ' + near.name + ' »' : (dist < 12 ? 'proche de « ' + near.name + ' »' : 'nuance proche : ' + near.name);
+    $('[data-name]').value = near.name;
+    $('[data-add]').disabled = false;
+  }
+  function pick(x, y) {
+    if ($('[data-white]').checked) {
+      white = sample(x, y);
+      $('[data-white]').checked = false;
+      hint('Lumière corrigée ✅ Cliquez maintenant sur le tissu.');
+      if (point) pick(point[0], point[1]);
+      return;
+    }
+    point = [x, y];
+    aim.hidden = false;
+    aim.style.left = (x / canvas.width * 100) + '%';
+    aim.style.top = (y / canvas.height * 100) + '%';
+    show(corrected(sample(x, y)));
+  }
+
+  // Coordonnées f l image
+  const at = e => {
+    const r = canvas.getBoundingClientRect();
+    return [Math.min(canvas.width - 1, Math.max(0, Math.floor((e.clientX - r.left) / r.width * canvas.width))),
+            Math.min(canvas.height - 1, Math.max(0, Math.floor((e.clientY - r.top) / r.height * canvas.height)))];
+  };
+  // Loupe: pixels mkbbrin + l zone li ghadi takhod l pipette
+  function drawLoupe(e) {
+    const [x, y] = at(e);
+    const N = 15, S = 132 / N;
+    lctx.imageSmoothingEnabled = false;
+    lctx.fillStyle = '#fff';
+    lctx.fillRect(0, 0, 132, 132);
+    lctx.drawImage(canvas, x - 7, y - 7, N, N, 0, 0, 132, 132);
+    const rr = Math.min(7, radius());
+    lctx.strokeStyle = '#fff'; lctx.lineWidth = 2;
+    lctx.strokeRect((7 - rr) * S, (7 - rr) * S, (rr * 2 + 1) * S, (rr * 2 + 1) * S);
+    lctx.strokeStyle = 'rgba(0,0,0,.6)'; lctx.lineWidth = 1;
+    lctx.strokeRect((7 - rr) * S - 1.5, (7 - rr) * S - 1.5, (rr * 2 + 1) * S + 3, (rr * 2 + 1) * S + 3);
+    const hex = rgbToHex(corrected(sample(x, y)));
+    const tag = loupe.querySelector('span');
+    tag.textContent = hex;
+    tag.style.background = hex;
+    tag.style.color = lab_l(hex) > 60 ? '#000' : '#fff';
+    const sr = stage.getBoundingClientRect();
+    let lx = e.clientX - sr.left + 18, ly = e.clientY - sr.top - 160;
+    if (ly < 0) ly = e.clientY - sr.top + 18;
+    if (lx + 140 > sr.width) lx = e.clientX - sr.left - 158;
+    loupe.style.left = lx + 'px'; loupe.style.top = ly + 'px';
+    loupe.hidden = false;
+  }
+  const lab_l = hex => lab(hexToRgb(hex))[0];
+
+  canvas.addEventListener('pointermove', drawLoupe);
+  canvas.addEventListener('pointerdown', e => { drawLoupe(e); if (e.pointerType !== 'mouse') canvas.setPointerCapture(e.pointerId); });
+  canvas.addEventListener('pointerleave', () => loupe.hidden = true);
+  canvas.addEventListener('pointerup', e => { pick(...at(e)); if (e.pointerType !== 'mouse') loupe.hidden = true; });
+
+  // Clavier: flèches bach tzid tdgg (1 pixel)
+  dlg.addEventListener('keydown', e => {
+    if (!point || canvas.hidden || !/^Arrow/.test(e.key) || e.target.matches('input, select')) return;
+    e.preventDefault();
+    const d = e.shiftKey ? 10 : 1;
+    const [x, y] = point;
+    pick(Math.min(canvas.width - 1, Math.max(0, x + (e.key === 'ArrowRight' ? d : e.key === 'ArrowLeft' ? -d : 0))),
+         Math.min(canvas.height - 1, Math.max(0, y + (e.key === 'ArrowDown' ? d : e.key === 'ArrowUp' ? -d : 0))));
+  });
+  $('[data-prec]').addEventListener('change', () => point && pick(...point));
+
+  // Sources dyal l image
+  $('[data-file]').onchange = e => { loadFile(e.target.files[0]); e.target.value = ''; };
+  $('[data-camera]').onclick = startCamera;
+  $('[data-shot]').onclick = () => video.videoWidth && freeze(video, video.videoWidth, video.videoHeight);
+  ['dragenter', 'dragover'].forEach(ev => stage.addEventListener(ev, e => { e.preventDefault(); stage.classList.add('is-over'); }));
+  ['dragleave', 'drop'].forEach(ev => stage.addEventListener(ev, () => stage.classList.remove('is-over')));
+  stage.addEventListener('drop', e => { e.preventDefault(); loadFile([...e.dataTransfer.files].find(f => /^image\//.test(f.type))); });
+  document.addEventListener('paste', e => {
+    if (!dlg.open) return;
+    const f = [...(e.clipboardData?.files || [])].find(f => /^image\//.test(f.type));
+    if (f) { e.preventDefault(); loadFile(f); }
+  });
+  // Pipette dyal l écran (Chrome / Edge f PC)
+  if (window.EyeDropper) {
+    $('[data-eyedropper]').hidden = false;
+    $('[data-eyedropper]').onclick = async () => {
+      try {
+        const { sRGBHex } = await new EyeDropper().open();
+        point = null; aim.hidden = true;
+        show(hexToRgb(sRGBHex));
+      } catch (e) { /* annulé */ }
+    };
+  }
+  // Les photos dyal l produit (deja uploadées f had l page)
+  function fillThumbs() {
+    const box = $('[data-thumbs]');
+    const srcs = [...document.querySelectorAll('#images .images__item img')].map(i => i.src).filter(Boolean);
+    box.innerHTML = '';
+    box.hidden = !srcs.length;
+    srcs.forEach(src => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.title = 'Prendre la couleur sur cette photo';
+      b.innerHTML = '<img alt="">';
+      b.querySelector('img').src = src;
+      b.onclick = () => { box.querySelectorAll('button').forEach(x => x.classList.toggle('is-active', x === b)); loadImage(src); };
+      box.append(b);
+    });
+    return srcs;
+  }
+
+  // Ajouter
+  function addCurrent() {
+    const name = $('[data-name]').value.trim();
+    // Traductions ghir ila l smiya hiya dyal la palette
+    const i18n = match && match.name === name ? (match.i18n || {}) : {};
+    const c = { name, hex: rgbToHex(rgb), ar: i18n.ar || '', en: i18n.en || '' };
+    onPick?.(c);
+    if (!multi) return dlg.close();
+    $('[data-picked]').append(chip(c));
+    hint('« ' + name + ' » ajoutée ✅ Cliquez sur une autre couleur, ou « Terminer ».');
+    $('[data-add]').disabled = true;
+  }
+  $('[data-add]').onclick = addCurrent;
+  $('[data-name]').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); if (!$('[data-add]').disabled) addCurrent(); } });
+  dlg.querySelectorAll('[data-close], [data-done]').forEach(b => b.onclick = () => dlg.close());
+  dlg.addEventListener('close', () => { stop(); loupe.hidden = true; });
+
+  window.openColorPick = (cb, opts = {}) => {
+    onPick = cb; multi = !!opts.multi; point = null; rgb = null; white = null; match = null; frozen = false;
+    result.hidden = true; aim.hidden = true; loupe.hidden = true; $('[data-add]').disabled = true; $('[data-white]').checked = false;
+    $('[data-picked]').innerHTML = '';
+    $('[data-add]').textContent = multi ? 'Ajouter cette couleur' : 'Utiliser cette couleur';
+    $('[data-done]').hidden = !multi;
+    canvas.hidden = true; video.hidden = true; $('[data-shot]').hidden = true;
+    dlg.showModal();
+    const thumbs = fillThumbs();
+    // PC (souris) → image; tel → caméra
+    const mode = opts.mode || (matchMedia('(pointer: fine)').matches ? 'image' : 'camera');
+    if (mode === 'camera') return startCamera();
+    if (thumbs.length) {
+      $('[data-thumbs] button').classList.add('is-active');
+      loadImage(thumbs[0]);
+    } else {
+      showEmpty(true);
+      hint('Choisissez une image de votre PC, glissez-la ici ou collez-la (Ctrl+V).');
+    }
+  };
+
+  document.querySelectorAll('[data-colorpick]').forEach(input => {
+    const box = document.createElement('div');
+    box.className = 'cchips';
+    const bar = document.createElement('div');
+    bar.className = 'cpick__open';
+    bar.innerHTML = '<button type="button" class="btn btn--ghost btn--sm" data-m="image">🎯 Pipette sur une image</button>'
+      + '<button type="button" class="btn btn--ghost btn--sm" data-m="camera">📷 Caméra</button>';
+    input.after(box, bar);
+    input.addEventListener('input', () => renderChips(input));
+    renderChips(input);
+    bar.querySelectorAll('button').forEach(btn => btn.onclick = () => input.disabled || openColorPick(c => {
+      const list = parse(input.value);
+      list.push(c);
+      input.value = serialize(list);
+      renderChips(input);
+    }, { multi: true, mode: btn.dataset.m }));
+  });
+
+  // Lignes dyal les couleurs (produit, palette): délégation 7it les lignes kayzado b JS
+  document.addEventListener('click', e => {
+    const btn = e.target.closest('[data-colorpick-row]');
+    if (!btn) return;
+    const row = btn.closest('[data-crow]');
+    openColorPick(c => {
+      const set = (sel, v, force) => { const el = row.querySelector(sel); if (el && v && (force || !el.value.trim())) { el.value = v; el.dispatchEvent(new Event('input', { bubbles: true })); } };
+      set('[data-hex]', c.hex, true);
+      set('[data-picker]', c.hex, true);
+      set('[data-cname]', c.name, true);
+      set('[data-car]', c.ar, false);
+      set('[data-cen]', c.en, false);
+      const nohex = row.querySelector('[name^="color_nohex"]');
+      if (nohex) nohex.checked = false;
+    });
+  });
+})();
+</script>
+  <script>
+    (() => {
+      const box = document.getElementById('paletteRows');
+      document.getElementById('addPalette').onclick = () => {
+        const row = box.lastElementChild.cloneNode(true);
+        row.querySelectorAll('input').forEach(i => i.value = i.type === 'color' ? '#cccccc' : '');
+        box.append(row);
+        row.querySelector('[data-cname]').focus();
+      };
+      box.addEventListener('input', e => {
+        const row = e.target.closest('[data-crow]');
+        if (e.target.matches('[data-picker]')) row.querySelector('[data-hex]').value = e.target.value;
+        if (e.target.matches('[data-hex]')) {
+          let v = e.target.value.trim();
+          if (/^[0-9a-f]{6}$/i.test(v)) v = e.target.value = '#' + v;
+          const ok = /^#[0-9a-f]{6}$/i.test(v);
+          e.target.classList.toggle('is-invalid', !ok && v !== '');
+          if (ok) row.querySelector('[data-picker]').value = v.toLowerCase();
+        }
+      });
+    })();
+  </script>
+
+  <section class="panel" id="securite">
+    <h2>Mots de passe &amp; équipe</h2>
+    <p class="muted small">Chaque personne a son propre identifiant et mot de passe. Changez le vôtre dans <a class="link-btn" href="compte.html">Mon compte</a>, et gérez les accès de votre équipe dans <a class="link-btn" href="equipe.html">Équipe</a>.</p>
+  </section>
+  </div>
+  <script>
+    const side = document.getElementById('side');
+    const toggle = open => { side.classList.toggle('is-open', open); document.body.classList.toggle('side-open', open); };
+    document.getElementById('sideBtn').addEventListener('click', () => toggle(!side.classList.contains('is-open')));
+    document.getElementById('sideOverlay').addEventListener('click', () => toggle(false));
+    document.querySelectorAll('[data-confirm]').forEach(el => el.addEventListener('click', e => {
+      if (!confirm(el.dataset.confirm)) e.preventDefault();
+    }));
+
+    // Alerte nouvelle commande: son + bandeau + titre + notification (ila msmou7a)
+    (() => {
+      let lastId = +document.body.dataset.lastOrder;
+      const baseTitle = document.title;
+      const banner = document.getElementById('newOrder');
+      const beep = () => {
+        try {
+          const ctx = new (window.AudioContext || window.webkitAudioContext)();
+          [0, 0.18, 0.36].forEach((t, i) => {
+            const o = ctx.createOscillator(), g = ctx.createGain();
+            o.frequency.value = [880, 1175, 1568][i];
+            g.gain.setValueAtTime(0.25, ctx.currentTime + t);
+            g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + t + 0.3);
+            o.connect(g).connect(ctx.destination);
+            o.start(ctx.currentTime + t); o.stop(ctx.currentTime + t + 0.32);
+          });
+        } catch (e) {}
+      };
+      async function poll() {
+        try {
+          const r = await fetch('poll.php', { cache: 'no-store' });
+          if (!r.ok) return;
+          const d = await r.json();
+          document.title = (d.pending ? `(${d.pending}) ` : '') + baseTitle;
+          if (d.last_id > lastId && d.last) {
+            lastId = d.last_id;
+            beep();
+            banner.href = 'commande.php?id=' + d.last.id;
+            banner.textContent = `🛍️ Nouvelle commande ${d.last.number} — ${d.last.name} (${d.last.city}) · ${d.last.total} → Voir`;
+            banner.hidden = false;
+            if ('Notification' in window && Notification.permission === 'granted') {
+              new Notification('Nouvelle commande ' + d.last.number, { body: `${d.last.name} · ${d.last.city} · ${d.last.total}`, icon: '../assets/img/icon-192.png' });
+            }
+          }
+        } catch (e) {}
+      }
+      setInterval(poll, 30000);
+      poll();
+      // Demande l'autorisation des notifications au premier clic
+      if ('Notification' in window && Notification.permission === 'default') {
+        document.addEventListener('click', () => Notification.requestPermission(), { once: true });
+      }
+    })();
+  </script>
+</body>
+</html>
